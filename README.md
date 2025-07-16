@@ -1,5 +1,7 @@
-# docker-hadoop-hive-parquet
-
-This project will showcase how to spin up a Hadoop cluster with Hive in order to run SQL queries on Parquet files. Images for the nodes are based on https://hub.docker.com/u/bde2020 base images.
-
-All of this makes more sense if you follow the link in the repository to the article on Medium :)
+ye repo clone karke docker compose up -d run karo
+```bash
+docker exec -it docker-hadoop-hive-parquet-hive-server-1 bash
+```
+```bash
+beeline -u jdbc:hive2://localhost:10000 -n hive
+```
