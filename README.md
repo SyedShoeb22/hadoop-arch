@@ -1,4 +1,6 @@
-ye repo clone karke docker compose up -d run karo
+```bash
+docker compose up -d run
+```
 ```bash
 docker exec -it docker-hadoop-hive-parquet-hive-server-1 bash
 ```
