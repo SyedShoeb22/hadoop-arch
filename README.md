@@ -1,5 +1,5 @@
 ```bash
-docker compose up -d run
+docker compose up -d
 ```
 ```bash
 docker exec -it docker-hadoop-hive-parquet-hive-server-1 bash
