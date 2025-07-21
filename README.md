@@ -86,7 +86,7 @@ docker-compose up -d
 Upload oozie-hive-wf folder to oozie container
 
 ```bash
-docker ps ./oozie-hive-wf oozie:/opt/oozie/oozie=hive-wf
+docker ps ./oozie-hive-wf oozie:/opt/oozie/oozie-hive-wf
 ```
 
 Enter the Oozie container:
