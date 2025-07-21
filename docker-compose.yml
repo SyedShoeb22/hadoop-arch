@@ -5,7 +5,6 @@ services:
     image: bde2020/hadoop-namenode:2.0.0-hadoop2.7.4-java8
     volumes:
       - namenode:/hadoop/dfs/name
-      - ./hadoop-config:/opt/hadoop/etc/hadoop
     environment:
       - CLUSTER_NAME=test
     env_file:
@@ -105,8 +104,6 @@ services:
       - resourcemanager
       - namenode
       - datanode
-    volumes:
-      - ./hadoop-config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
     environment:
       SERVICE_PRECONDITION: "zookeeper:2181 hive-metastore:9083 hive-server:10000 resourcemanager:8088 namenode:50070 datanode:50075"
 
