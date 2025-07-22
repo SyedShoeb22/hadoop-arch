@@ -5,6 +5,7 @@ services:
     image: bde2020/hadoop-namenode:2.0.0-hadoop2.7.4-java8
     volumes:
       - namenode:/hadoop/dfs/name
+      - ./hadoop-config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
     environment:
       - CLUSTER_NAME=test
     env_file:
@@ -97,6 +98,8 @@ services:
     container_name: oozie
     ports:
       - "11000:11000"
+    volumes:
+      - ./hadoop-config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
     depends_on:
       - zookeeper
       - hive-metastore
